@@ -29,3 +29,8 @@ export const deleteTask = (taskId) =>{
   const taskRef = ref(db, `tasks/${taskId}`);
 return remove(taskRef);
 }
+
+export const updateTaskText = (taskId, newText) => {
+  const taskRef = ref(db, `tasks/${taskId}`);
+  return update(taskRef, { text: newText });
+};

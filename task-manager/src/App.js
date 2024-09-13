@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import TodoList from './components/TodoList';
 import Navbar from './components/Navbar';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
   return (
