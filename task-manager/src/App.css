@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.app-container {
+  display: flex;
+  justify-content: center; /* Центрира съдържанието хоризонтално */
+  height: 100vh; /* Цялата височина на прозореца */
+}
+
+.navbar-container {
+  width: 15%;
+  background-color: #3b5998; /* Примерен цвят на навигационната лента */
+  padding: 20px;
+  margin: 0 5%; /* Добавяме отстояние от двете страни */
+  border-radius: 15px; /* Заобляне на ъглите */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content-container {
+  width: 80%;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px; /* Заобляне на ъглите */
+}
+
