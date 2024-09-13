@@ -1,5 +1,5 @@
 import { db } from '../firebase.config'; 
-import { ref, onValue, push, update } from 'firebase/database';
+import { ref, onValue, push, update, remove } from 'firebase/database';
 
 export const getTasks = (callback) => {
   const tasksRef = ref(db, 'tasks');
@@ -24,3 +24,8 @@ export const updateTaskStatus = (taskId, completed) => {
   const taskRef = ref(db, `tasks/${taskId}`);
   update(taskRef, { completed });
 };
+
+export const deleteTask = (taskId) =>{
+  const taskRef = ref(db, `tasks/${taskId}`);
+return remove(taskRef);
+}
