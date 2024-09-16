@@ -8,6 +8,9 @@ function Navbar() {
         <li className="nav-item">
           <Link className="nav-link btn btn-dark bg-dark text-light" to="/" style={{ marginTop: '10%' }}>Todo</Link>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link btn btn-dark bg-dark text-light" to="/my-progress" style={{ marginTop: '10%' }}>My Progress</Link>
+        </li>
       </ul>
     </nav>
   );

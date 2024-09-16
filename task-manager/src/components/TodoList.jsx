@@ -49,7 +49,7 @@ function TodoList() {
       <h1 className="text-center mb-4">Todo List</h1>
       <CreateTodo />
       <div className="mt-4">
-        {Object.keys(groupedTasks).map((date) => (
+        {Object.keys(groupedTasks).reverse().map((date) => (
           <div key={date} className="mb-4">
             <div className="d-flex justify-content-between align-items-center">
               <h4>{date}</h4>
