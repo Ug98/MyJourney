@@ -59,3 +59,30 @@
   border-radius: 15px; /* Заобляне на ъглите */
 }
 
+.weight-form-container {
+  border: 2px solid #FFA500;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  margin-left: 0;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.position-relative .btn-light {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
